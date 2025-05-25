@@ -7,7 +7,7 @@ function SearchInput({ getWeatherDetails, searchInputRef, city, setCity }) {
 
   const handleCity = (e) => {
     e.preventDefault();
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchInput}&days=2`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchInput}&days=2`;
 
     getWeatherDetails(API_URL);
     setSearchInput("");

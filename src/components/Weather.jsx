@@ -66,7 +66,7 @@ const Weather = () => {
 
   useEffect(() => {
     const defaultCity = "Wai,india";
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2`;
 
     getWeatherDetails(API_URL);
   }, []);
